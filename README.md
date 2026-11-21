@@ -1,4 +1,4 @@
-# SOLMERE — The Poster for a Place That Isn't There
+# VESPERA — The Poster for a Place That Isn't There
 
 [![make.fun](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539.svg)](https://make.fun/competitions/the-poster-for-a-place-that-i-2-20261121-0539)
 [![Rank](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/junod1908/the-poster-for-a-place-that-i-2-20261121-0539/rank.svg)](https://make.fun/competitions/the-poster-for-a-place-that-i-2-20261121-0539)
@@ -8,7 +8,7 @@ Entry for the [make.fun competition "The Poster for a Place That Isn't There"](h
 
 ## The place
 
-**SOLMERE** — a lagoon where the sun rests on the water. Its one landmark is
+**VESPERA** — a lagoon where the sun rests on the water. Its one landmark is
 the **Sun Ring**, a giant natural stone ring standing in the lagoon, with the
 setting sun framed exactly inside it. Amber dusk sky, a gold sun, dark teal
 water, and a path of golden light leading the eye from the name down to the

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""SOLMERE — a travel poster for a place that isn't there.
+"""VESPERA — a travel poster for a place that isn't there.
 
 Draws a fully procedural travel poster (Pillow only, no network, no
 external images) and writes it to /output/entry.png (1024x1024, <=1 MiB).
 
-The place: SOLMERE, a lagoon where the sun rests on the water.
+The place: VESPERA, a lagoon where the sun rests on the water.
 Its one landmark: the Sun Ring — a giant natural stone ring standing
 in the lagoon, with the setting sun framed exactly inside it.
 """
@@ -19,13 +19,13 @@ W = H = 1024
 OUT = "/output/entry.png"
 
 # ---------------------------------------------------------------- palette
-SKY_TOP = (176, 74, 44)       # deep coral dusk
-SKY_MID = (228, 122, 54)      # amber
+SKY_TOP = (150, 58, 98)       # dusky violet dusk (not generic teal+gold)
+SKY_MID = (214, 96, 84)      # rose-coral
 SKY_LOW = (247, 183, 88)      # gold near the horizon
 SUN_CORE = (255, 224, 130)
 SUN_EDGE = (255, 176, 64)
-WATER_TOP = (16, 74, 76)      # dark teal lagoon
-WATER_BOT = (6, 34, 38)
+WATER_TOP = (22, 60, 84)      # violet-teal lagoon
+WATER_BOT = (10, 26, 48)      # deep violet-indigo
 STONE_LIT = (122, 88, 66)     # sunlit rim of the ring
 STONE_MID = (74, 52, 40)
 STONE_DARK = (38, 26, 20)
@@ -239,18 +239,18 @@ def main():
         d.arc([bx, by - s // 2, bx + s, by + s // 2], start=200, end=340,
               fill=(60, 30, 22, 230), width=3)
 
-    # --- type: SOLMERE, then the one-line promise ----------------------
+    # --- type: VESPERA, then the one-line promise ----------------------
     d = ImageDraw.Draw(img, "RGBA")
     # auto-fit the title inside the frame (max width 940)
     title_size = 132
     while title_size > 60:
         title_font = font("DejaVuSerif-Bold.ttf", title_size)
-        w = sum(d.textlength(ch, font=title_font) for ch in "SOLMERE") \
-            + 18 * (len("SOLMERE") - 1)
+        w = sum(d.textlength(ch, font=title_font) for ch in "VESPERA") \
+            + 18 * (len("VESPERA") - 1)
         if w <= 940:
             break
         title_size -= 6
-    draw_tracked(d, 512, 66, "SOLMERE", title_font, CREAM,
+    draw_tracked(d, 512, 66, "VESPERA", title_font, CREAM,
                  tracking=18, shadow=(3, 5, (40, 16, 10, 170)))
     # thin gold rules flanking the tagline
     tag_font = font("DejaVuSans.ttf", 28)
